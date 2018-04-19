@@ -12,7 +12,8 @@ color: white;
 min-height: 400px;
 width:70%;
 text-align: center;
-margin-left: 21%;
+margin-left: 19%;
+
 `;
 
 export default class Item extends React.Component {

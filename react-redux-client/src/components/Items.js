@@ -15,7 +15,30 @@ color: white;
 min-height: 400px;
 width:70%;
 text-align: center;
-margin-left: 21%;
+margin-left: 19%;
+
+border-radius: 27px 27px 27px 27px;
+-moz-border-radius: 27px 27px 27px 27px;
+-webkit-border-radius: 27px 27px 27px 27px;
+border: 0px solid #bd0009;
+
+-webkit-animation:flip 2s ease 0s 1 normal;
+-moz-animation:flip 2s ease 0s 1 normal;
+-ms-animation:flip 2s ease 0s 1 normal;
+animation:flip 2s ease 0s 1 normal;
+
+
+@-webkit-keyframes flip {
+0%{ -webkit-transform: translateY(0); transform: rotateY(0deg); }
+50%{ -webkit-transform: translateY(180); transform: rotateY(180deg); }
+100%{ -webkit-transform: translateY(0); transform: rotateY(0deg); }
+}
+
+@keyframes flip {
+0%{ transform: rotateY(0deg); }
+50%{ transform: rotateY(180deg); }
+100%{ transform: rotateY(0deg); }
+}
 `;
 
 
