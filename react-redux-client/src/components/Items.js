@@ -7,12 +7,15 @@ import styled from 'styled-components';
 
 
 const Center = styled.div`
-align-items: center;
-justify-content: space-around;
-display: flex;
-float: none;
-background-color: white;
-bottom:10%;
+background: -webkit-linear-gradient(143deg, rgba(255,0,0,1) 0%, rgba(186,0,0,1) 27%, rgba(99,0,0,1) 61%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+min-height: 400px;
+width:70%;
+text-align: center;
+margin-left: 21%;
 `;
 
 

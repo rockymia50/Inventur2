@@ -1,10 +1,25 @@
 // ./react-redux-client/src/components/ItemEditForm.js
 import React from 'react';
 import { FormGroup,ControlLabel,FormControl,Button } from 'react-bootstrap';
+import styled from 'styled-components';
+import img from './yeezy.jpeg'
+
+const FormStyle = styled.div`
+background-image: url(${img});
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+min-height: 400px;
+width:70%;
+text-align: center;
+margin-left: 21%;
+`;
 
 
 const ItemEditForm = (props) => {
   return (
+    <FormStyle>
     <form className="form form-horizontal" id="EditItemForm" onSubmit={props.editItem}>
     <div className="row">
     <div className="col-md-12">
@@ -31,6 +46,7 @@ const ItemEditForm = (props) => {
               <Button type="submit" bsStyle="success" bsSize="large" block>Submit</Button>
           </FormGroup>
     </form>
+    </FormStyle>
   );
 }
 

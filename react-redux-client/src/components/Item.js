@@ -1,5 +1,19 @@
 // ./react-redux-client/src/components/Item.js
 import React from 'react';
+import styled from 'styled-components';
+import img from './AJ3.jpg'
+
+const ItemDetail = styled.div`
+background-image: url(${img});
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+min-height: 400px;
+width:70%;
+text-align: center;
+margin-left: 21%;
+`;
 
 export default class Item extends React.Component {
   componentDidMount(){
@@ -10,7 +24,8 @@ export default class Item extends React.Component {
   render(){
     const itemState = this.props.mappedItemState;
     return(
-      <div className="itemDetail">
+      
+      <ItemDetail>
        <h2>Item Detail</h2>
          {!itemState.item && itemState.isFetching &&
            <div>
@@ -23,7 +38,8 @@ export default class Item extends React.Component {
            <p>{itemState.item.itemDesc}</p>
          </div>
        }
-      </div>
+      </ItemDetail>
+      
     );
   }
 }
