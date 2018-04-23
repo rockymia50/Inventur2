@@ -4,6 +4,7 @@
   "description": "Inventory management and resource system",
   "main": "index.js",
   "scripts": {
+    "yarn": "1.5.1",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app_hooked.js",
     "client": "npm run start --prefix react-redux-client",
