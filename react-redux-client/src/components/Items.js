@@ -90,9 +90,9 @@ render(){
     return(
       <Center>
       <div className="col-md-12">
-      <h3 className="centerAlign">Items</h3>
+      <h3 className="centerAlign">Sneakers</h3>
       {!items && itemState.isFetching &&
-        <p>Loading items....</p>
+        <p>Loading sneakers....</p>
       }
       
       {items.length <= 0 && !itemState.isFetching &&

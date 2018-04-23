@@ -49,9 +49,12 @@ animation:bounce-in 1s ease-in-out 0s 1 normal;
 70%{ transform: scale(0.9); }
 100%{ transform: scale(1); }
 }
-
 `;
 
+const FormStyle = styled.div`
+width:70%;
+margin-left:15%;
+`
 
 
 
@@ -60,29 +63,29 @@ const ItemForm = (props) => {
     <AddFormStyle>
     <form className="form form-horizontal" id="addItemForm" onSubmit={props.addItem}>
     <div className="row">
-    <h3 className="centerAlign">Add Your Item</h3>
+    <h3 className="centerAlign">Add Your Sneaker</h3>
     <div className="col-md-12">
-    <FormGroup>
+    <FormStyle>
           <ControlLabel>Item: </ControlLabel>
             <FormControl
               type="text" placeholder="Enter item"
               name="itemText"
                />
-        </FormGroup>
+        </FormStyle>
         </div>
         <div className="col-md-12">
-        <FormGroup>
+        <FormStyle>
               <ControlLabel>Description: </ControlLabel>
                 <FormControl
                   componentClass="textarea" placeholder="Enter description"
                   name="itemDesc"
                    />
-            </FormGroup>
+            </FormStyle>
             </div>
           </div>
-          <FormGroup>
+          <FormStyle>
               <Button type="submit" bsStyle="success" bsSize="large" block>Submit</Button>
-          </FormGroup>
+          </FormStyle>
     </form>
     </AddFormStyle>
   );

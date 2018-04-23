@@ -5,6 +5,7 @@ var Schema = mongoose.Schema({
     default: Date.now
   },
   fullName: String,
-  itemText: String
+  itemText: String,
+  itemDesc: String,
 });
 export default mongoose.model('Item', Schema);

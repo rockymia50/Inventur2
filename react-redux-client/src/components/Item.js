@@ -27,10 +27,10 @@ export default class Item extends React.Component {
     return(
       
       <ItemDetail>
-       <h2>Item Detail</h2>
+       <h2>Sneaker Detail</h2>
          {!itemState.item && itemState.isFetching &&
            <div>
-             <p>Loading Item....</p>
+             <p>Sneaker Item....</p>
            </div>
          }
        {itemState.item && !itemState.isFetching &&
