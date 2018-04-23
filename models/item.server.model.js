@@ -4,8 +4,10 @@ var Schema = mongoose.Schema({
     type: Date,
     default: Date.now
   },
+  image:String,
   fullName: String,
   itemText: String,
   itemDesc: String,
+  
 });
 export default mongoose.model('Item', Schema);
