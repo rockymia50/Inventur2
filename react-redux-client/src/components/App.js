@@ -8,8 +8,7 @@ import img from './sneakercloset.jpg'
 
 const BackGround = styled.div`
     background-image: url(${img});
-    max-width: 500px;
-    margin: auto;
+    height:100vh;
   	background-position: center center;
 			background-repeat:  no-repeat;
 			background-size:  cover;
