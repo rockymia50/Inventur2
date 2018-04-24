@@ -55,7 +55,7 @@ const port = process.env.PORT || 3001;
 
 // connect to database
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/Inventur', {
+mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds035826.mlab.com:35826/heroku_w9dkk5z2', {
  
 });
 app.use('/api', itemRoutes);
