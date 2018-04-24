@@ -16,6 +16,7 @@ min-height: 400px;
 width:70%;
 text-align: center;
 margin-left: 19%;
+display:none;
 
 border-radius: 27px 27px 27px 27px;
 -moz-border-radius: 27px 27px 27px 27px;
@@ -43,6 +44,7 @@ animation:flip 2s ease 0s 1 normal;
 
 
 
+
 export default class Items extends React.Component {
   constructor(props){
     super(props);
@@ -50,6 +52,12 @@ export default class Items extends React.Component {
     this.submitEditItem = this.submitEditItem.bind(this);
     this.hideDeleteModal = this.hideDeleteModal.bind(this);
     this.cofirmDeleteItem = this.cofirmDeleteItem.bind(this);
+
+
+    setTimeout(() => {
+      const itemsList = document.getElementById("items-list");
+      itemsList.setAttribute("style", "display:block;")
+    }, 10000);
   }
 componentWillMount(){
     this.props.fetchItems();
@@ -88,7 +96,8 @@ render(){
     const items = itemState.items;
     const editItem = itemState.itemToEdit;
     return(
-      <Center>
+
+      <Center id="items-list">
       <div className="col-md-12">
       <h3 className="centerAlign">Sneakers</h3>
       {!items && itemState.isFetching &&

@@ -1,6 +1,6 @@
 // ./react-redux-client/src/components/ItemForm.js
 import React from 'react';
-import { FormGroup,ControlLabel,FormControl,Button } from 'react-bootstrap';
+import { ControlLabel,FormControl,Button } from 'react-bootstrap';
 
 import styled from 'styled-components';
 import img from './goldie.jpg'

@@ -5,6 +5,8 @@ import { LinkContainer } from 'react-router-bootstrap'
 import ItemForm from './ItemForm'
 import styled from 'styled-components'
 import img from './sneakercloset.jpg'
+// import img2 from './goldie.jpg';
+
 
 const BackGround = styled.div`
     background-image: url(${img});
@@ -81,6 +83,7 @@ export default class App extends React.Component {
     const appState = this.props.mappedAppState
     return (
       <div>
+        {/* <img id="test" src={img2}></img> */}
         <Navbar inverse collapseOnSelect className='customNav'>
           <Navbar.Header>
             <NavAnimate>

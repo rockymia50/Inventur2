@@ -7,7 +7,7 @@ var Schema = mongoose.Schema({
   image:String,
   fullName: String,
   itemText: String,
-  itemDesc: String,
+  // itemDesc: String,
   
 });
 export default mongoose.model('Item', Schema);
