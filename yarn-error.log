@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/Cellar/node/9.9.0/bin/node /usr/local/bin/yarn build
+  /usr/local/Cellar/node/9.9.0/bin/node /usr/local/bin/yarn install react-chartjs-2
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -21,14 +21,14 @@ npm manifest:
     "main": "index.js",
     "engines": {
       "node": "9.9.0",
-      "npm" : "5.6.0"
+      "npm": "5.6.0"
     },
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "nodemon app_hooked.js",
+      "start": "node app.js",
       "client": "npm run start --prefix react-redux-client",
+      "build": "cd client && npm run build",
       "dev": "concurrently \"npm run start\" \"npm run client\""
-      
     },
     "author": "",
     "license": "ISC",
@@ -44,10 +44,12 @@ npm manifest:
       "morgan": "^1.9.0",
       "path": "^0.12.7",
       "react-bootstrap": "^0.32.1",
+      "react-image-upload": "0.0.1",
       "react-redux": "^5.0.7",
       "react-router": "^3.2.1",
       "react-router-bootstrap": "^0.23.3",
       "react-router-redux": "^4.0.8",
+      "react-simple-chatbot": "^0.2.9",
       "redux": "^3.7.2",
       "redux-thunk": "^2.2.0",
       "source-map-support": "^0.5.4",
@@ -63,14 +65,10 @@ Lockfile:
   No lockfile
 
 Trace: 
-  Error: Command "build" not found.
+  Error: `install` has been replaced with `add` to add new dependencies. Run "yarn add react-chartjs-2" instead.
       at new MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
-      at /usr/local/lib/node_modules/yarn/lib/cli.js:87307:17
+      at Object.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:21987:13)
       at Generator.next (<anonymous>)
       at step (/usr/local/lib/node_modules/yarn/lib/cli.js:98:30)
-      at /usr/local/lib/node_modules/yarn/lib/cli.js:116:14
-      at new Promise (<anonymous>)
-      at new F (/usr/local/lib/node_modules/yarn/lib/cli.js:23451:28)
-      at /usr/local/lib/node_modules/yarn/lib/cli.js:95:12
-      at runCommand (/usr/local/lib/node_modules/yarn/lib/cli.js:87312:22)
-      at Object.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:87412:14)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:109:13
+      at <anonymous>

@@ -14,7 +14,7 @@ color: white;
 min-height: 400px;
 width:70%;
 text-align: center;
-margin-left: 19%;
+margin-left: 17%;
 
 border-radius: 27px 27px 27px 27px;
 -moz-border-radius: 27px 27px 27px 27px;

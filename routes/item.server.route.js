@@ -8,6 +8,8 @@ router.route('/')
      .get(itemController.getItems)
      .post(itemController.addItem)
      .put(itemController.updateItem);
+router.route('/charts')
+      .get(itemController.getItems);
 router.route('/:id')
       .get(itemController.getItem)
       .delete(itemController.deleteItem);

@@ -12,10 +12,10 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 color: white;
-min-height: 400px;
+min-height: 100%;
 width:70%;
 text-align: center;
-margin-left: 19%;
+margin-left: 17%;
 display:none;
 
 border-radius: 27px 27px 27px 27px;
@@ -57,7 +57,7 @@ export default class Items extends React.Component {
     setTimeout(() => {
       const itemsList = document.getElementById("items-list");
       itemsList.setAttribute("style", "display:block;")
-    }, 10000);
+    }, 3000);
   }
 componentWillMount(){
     this.props.fetchItems();

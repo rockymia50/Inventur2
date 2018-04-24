@@ -4,8 +4,9 @@ import { Navbar, Nav, NavItem } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import ItemForm from './ItemForm'
 import styled from 'styled-components'
-import img from './sneakercloset.jpg'
+import img from './sneakershelf.gif'
 // import img2 from './goldie.jpg';
+// import ChatBot from 'react-simple-chatbot';
 
 
 const BackGround = styled.div`
@@ -99,6 +100,11 @@ export default class App extends React.Component {
                 <NavItem eventKey={1}>Home</NavItem>
               </LinkContainer>
             </Nav>
+            <Nav>
+              <LinkContainer to={{ pathname: '/charts', query: {} }}>
+                <NavItem eventKey={1}>Charts</NavItem>
+              </LinkContainer>
+            </Nav>
             <Nav pullRight>
               <LinkContainer
                 to={{ pathname: '/', query: {} }}
@@ -113,7 +119,17 @@ export default class App extends React.Component {
           {appState.showAddItem && <ItemForm addItem={this.addItem} />}
           {/* Each Smaller Components */}
           {this.props.children}
+          
         </BackGround>
+        {/* <ChatBot
+  steps={[
+    {
+      id: 'hello-world',
+      message: 'Hello World!',
+      end: true,
+    },
+  ]}
+/> */}
       </div>
     )
   }

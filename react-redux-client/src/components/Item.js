@@ -12,8 +12,7 @@ color: white;
 min-height: 400px;
 width:70%;
 text-align: center;
-margin-left: 19%;
-a
+margin-left: 17%;
 
 `;
 
